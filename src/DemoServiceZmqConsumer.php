@@ -4,7 +4,7 @@ namespace PhpScotland2016\Demo\Service\Impl\Zmq;
 
 use PhpScotland2016\Demo\Service\Interfaces\DemoServiceRequest;
 use PhpScotland2016\Demo\Service\Interfaces\DemoServiceResponse;
-use PhpScotland2016\Demo\Service\Impls\DemoService\Impl\DemoServiceImplDirect;
+use PhpScotland2016\Demo\Service\Impls\Direct\DemoServiceImplDirect;
 
 class DemoServiceZmqConsumer 
 {
