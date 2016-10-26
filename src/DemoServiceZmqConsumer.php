@@ -2,6 +2,7 @@
 
 namespace PhpScotland2016\Demo\Service\Impls\Zmq;
 
+use PhpScotland2016\Demo\Service\Impls\DemoServiceLocal;
 use PhpScotland2016\Demo\Service\Interfaces\DemoServiceRequest;
 use PhpScotland2016\Demo\Service\Interfaces\DemoServiceResponse;
 
