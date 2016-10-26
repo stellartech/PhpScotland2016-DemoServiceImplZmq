@@ -4,9 +4,8 @@ namespace PhpScotland2016\Demo\Service\Impls\Zmq;
 
 use PhpScotland2016\Demo\Service\Interfaces\DemoServiceRequest;
 use PhpScotland2016\Demo\Service\Interfaces\DemoServiceResponse;
-use PhpScotland2016\Demo\Service\Interfaces\DemoServiceInterface;
 
-class DemoServiceZmq implements DemoServiceInterface
+class DemoServiceZmqConsumer 
 {
 	protected $_context = null;
 	protected $_push = null;
