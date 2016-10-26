@@ -50,7 +50,7 @@ class DemoServiceZmqConsumer
 	}
 
 	private function recv() {
-		while(true) {
+		while($this->_run) {
 			$json = $this->_pull->recv(\ZMQ::MODE_NOBLOCK);
 			if(!is_string($json) || empty($json)) {
 				usleep(10);
