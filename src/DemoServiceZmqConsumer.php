@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpScotland2016\Demo\Service\Impls\Zmq;
+namespace PhpScotland2016\Demo\Service\Impl\Zmq;
 
-use PhpScotland2016\Demo\Service\Impls\DemoServiceLocal;
 use PhpScotland2016\Demo\Service\Interfaces\DemoServiceRequest;
 use PhpScotland2016\Demo\Service\Interfaces\DemoServiceResponse;
+use PhpScotland2016\Demo\Service\Impls\DemoService\Impl\DemoServiceImplDirect;
 
 class DemoServiceZmqConsumer 
 {
@@ -45,7 +45,7 @@ class DemoServiceZmqConsumer
 	}
 
 	private function handleRequest(DemoServiceRequest $request) {
-		$service = new DemoServiceLocal;
+		$service = new DemoServiceImplDirect;
 		return $service->handleRequest($request);
 	}
 

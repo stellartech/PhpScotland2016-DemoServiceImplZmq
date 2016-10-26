@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpScotland2016\Demo\Service\Impls\Zmq;
+namespace PhpScotland2016\Demo\Service\Impl\Zmq;
 
 use PhpScotland2016\Demo\Service\Interfaces\DemoServiceRequest;
 use PhpScotland2016\Demo\Service\Interfaces\DemoServiceResponse;

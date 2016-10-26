@@ -13,22 +13,22 @@
 		"package-path": "PhpScotland2016/DemoServiceInterface"
 	},{
 		"type": "vcs",
-		"url": "https://github.com/A-j-K/PhpScotland2016-DemoServiceImpl.git",
-		"package-path": "PhpScotland2016/DemoServiceImpl"
+		"url": "https://github.com/A-j-K/PhpScotland2016-DemoServiceImplDirect.git",
+		"package-path": "PhpScotland2016/DemoServiceImplDirect"
 	}
 	],
 	"require": {
 		"ext-zmq": "*",
 		"php-amqplib/php-amqplib": "2.6.*",
 		"PhpScotland2016/DemoServiceInterface": "1.0.0.x-dev",
-		"PhpScotland2016/DemoServiceImpl": "dev-master"
+		"PhpScotland2016/DemoServiceImplDirect": "dev-master"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "4.0.*"
 	},
 	"autoload": {
 		"psr-4": {
-			"PhpScotland2016\\Demo\\Service\\Impls\\Zmq\\": "src/"
+			"PhpScotland2016\\Demo\\Service\\Impl\\Zmq\\": "src/"
 		}
 	}
 }
