@@ -16,11 +16,11 @@ class DemoServiceZmqConsumer
 		$this->_context = new \ZMQContext(1, true);
 		$conn = "tcp://" .  $_ENV["ZMQ_BROKER"] .":". $_ENV["ZMQ_BROKER_BACK_PORT"];
 		$this->log("Connecting to $conn");
-		$this->_pull = $context->getSocket(\ZMQ::SOCKET_PULL, null);
+		$this->_pull = $this->_context->getSocket(\ZMQ::SOCKET_PULL, null);
 		$this->_pull->connect($conn);
 		$conn = "tcp://" .  $_ENV["CROSSBAR_HOST"] .":". $_ENV["CROSSBAR_ZMQ_PULL_PORT"];
 		$this->log("Connecting to $conn");
-		$this->_push = $context->getSocket(\ZMQ::SOCKET_PUSH, null);
+		$this->_push = $this->_context->getSocket(\ZMQ::SOCKET_PUSH, null);
 		$this->_push->connect($conn);
 		if(extension_loaded("pcntl")) {
 			pcntl_signal(SIGTERM, function($signo) {
